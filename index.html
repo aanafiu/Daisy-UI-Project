@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justice - A DaisyBase Project</title>
+
+    <!-- Tailwind & Daisy Link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome link  -->
+    <script src="https://kit.fontawesome.com/9d3aa58ebe.js" crossorigin="anonymous"></script>
+
+    <!-- EB Garamond Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    <!-- Poppins link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+     <link rel="stylesheet" href="./style/style.css">
+
+
+</head>
+<body>
+
+    <!-- header and nav  -->
+    <header class=" p-font">
+        <div class="w-11/12 sm:w-4/5 mx-auto flex justify-evenly sm:justify-between items-center py-6">
+
+            <!-- logo -->
+             <div>
+                <img src="./images/logo2.png" alt="" class="  whitespace-nowrap">
+             </div>
+
+             <!-- menu  -->
+             <ul class="flex text-base font-base whitespace-nowrap hidden lg:flex ">
+                <li class="p-3 rounded-xl hover:bg-[#B68C5A] hover:text-white hover:font-medium"><a href="#">Home</a></li>
+                <li class="p-3 rounded-xl hover:bg-[#B68C5A] hover:text-white hover:font-medium"><a href="#">Services<span class="mx-2">&#10095;</span></a></li>
+                <li class="p-3 rounded-xl hover:bg-[#B68C5A] hover:text-white hover:font-medium"><a href="#">Cases<span class="mx-2">&#10095;</span></a></li>
+                <li class="p-3 rounded-xl hover:bg-[#B68C5A] hover:text-white hover:font-medium"><a href="#">Blog<span class="mx-2">&#10095;</span></a></li>
+                <li class="p-3 rounded-xl hover:bg-[#B68C5A] hover:text-white hover:font-medium"><a href="#">Contact Us<span class="mx-2">&#10095;</span></a></li>
+              </ul>
+
+              <!-- Button with pop-up / modal  -->
+              <button class="btn btn-md  bg-[#B68C5A]  hover:text-[#B68C5A] hover:bg-[#414040] " onclick="my_modal_3.showModal()">Free Consultation</button>
+              <dialog id="my_modal_3" class="modal bg-[#ffffff8e]">
+                <div class="modal-box bg-[#B68C5A] text-white">
+                  <form method="dialog">
+                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                  </form>
+                  <h3 class="text-2xl font-bold">Book Now</h3>
+                  <p class="py-4 text-xl ">Information About Consultation.<br>Contact Number: 123456789 <br> Email: Justice@gmail.com</p>
+                </div>
+              </dialog>
+
+                           <!-- menu button -->
+             <div class="block lg:hidden ">
+                <button class="btn btn-square btn-ghost btn-lg ">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+              </div>
+
+
+        </div>
+    </header>
+
+    <!-- Hero -->
+     <main class="p-font">
+        <div class="w-11/12 sm:w-4/5 mx-auto flex items-center " style="height: 80vh; background-image: linear-gradient(to top, rgba(0, 0, 0, 0.842), rgba(0, 0, 0, 0)),url(./images/banner.png) ; background-position: center; background-repeat: no-repeat; background-size: cover;  ">
+
+                <div class="w-[90%] md:w-9/12 flex flex-col mx-auto justify-center items-center gap-8" >
+
+                        <h1 class="head-font text-5xl md:text-7xl font-extrabold text-white text-center ">We Provide Effective <br> Legal Solutions</h1>
+                        <p class="p-font text-white text-base text-center w-[80%] mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+
+                        <!-- search -->
+                        <div class="w-[70%] flex items-center rounded-xl gap-4  placeholder-[#A0A0A0]  ">
+                            <input type="text" class="py-3 text-base font-medium text-black outline-none grow w-full px-5 rounded-xl bg-white" placeholder="Search Your Services" />
+                            <!-- Button -->
+                        <button class="btn py-4 font-bold bg-[#B68C5A] hover:text-[#B68C5A] hover:bg-[#414040]">Search</button>
+
+                        </div>
+
+                </div>
+
+        </div>
+     </main>
+
+    
+</body>
+</html>
