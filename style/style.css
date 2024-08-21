@@ -13,4 +13,16 @@
 .p-font {
     font-family: "Poppins", sans-serif;
   }
+
+     .more{
+        display: none; 
+    }
+    .main:hover{
+        transform: rotate(270deg);
+    }
+    .main:hover + .more {
+        display: block;
+    }
+    
+    
   
