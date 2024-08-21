@@ -18,11 +18,15 @@
         display: none; 
     }
     .main:hover{
-        transform: rotate(270deg);
+        transform: rotate(90deg);
     }
     .main:hover + .more {
         display: block;
     }
-    
+    .box:hover {
+        display: flex;
+        flex-direction: column;
+    }
+
     
   
