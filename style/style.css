@@ -7,11 +7,13 @@
 /* EB Garamond font */
 .head-font {
   font-family: "EB Garamond", serif;
+  color: #414040;
 }
 
 /* Poppins font*/
 .p-font {
     font-family: "Poppins", sans-serif;
+    color: #707070;
   }
 
      .more{
