@@ -33,8 +33,8 @@
 <body class="bg-white">
 
     <!-- header and nav  -->
-    <header class=" p-font">
-        <div class="w-11/12 sm:w-4/5 mx-auto flex justify-evenly sm:justify-between items-center py-6">
+    <header class=" p-font r">
+        <div class="relative w-11/12 sm:w-4/5 mx-auto flex justify-evenly sm:justify-between items-center py-6">
 
             <!-- logo -->
              <div>
@@ -42,7 +42,7 @@
              </div>
 
              <!-- menu  -->
-             <ul class=" text-base text-[#707070] font-base whitespace-nowrap hidden lg:flex ">
+             <ul id="navlinks" class="text-base text-[#707070] font-base whitespace-nowrap hidden lg:flex ">
                 <li class="p-3 rounded-xl hover:bg-[#B68C5A] hover:text-white hover:font-medium"><a href="#">Home</a></li>
                 <li class="p-3 rounded-xl hover:bg-[#B68C5A] hover:text-white hover:font-medium"><a href="#">Services<span class="mx-2">&#10095;</span></a></li>
                 <li class="p-3 rounded-xl hover:bg-[#B68C5A] hover:text-white hover:font-medium"><a href="#">Cases<span class="mx-2">&#10095;</span></a></li>
@@ -62,8 +62,8 @@
                 </div>
               </dialog>
 
-                           <!-- menu button -->
-             <div class="block lg:hidden ">
+                <!-- menu button -->
+             <div id="menutoggle" class=" block lg:hidden ">
                 <button class="btn btn-square btn-ghost btn-lg ">
                     <i class="fa-solid fa-bars text-2xl"></i>
                 </button>
@@ -413,7 +413,7 @@
                   type="text"
                   placeholder="Email Address@site.com"
                   class="input input-bordered join-item bg-white" />
-                <button class="btn btn-primary join-item  bg-[#B68C5A] border-0 hover:bg-white"><i class="fa-solid fa-paper-plane hover:text-[#B68C5A]"></i></button>
+                <button class="btn btn-primary join-item  bg-[#B68C5A] border-0 hover:bg-white hover:text-[#B68C5A]"><i class="fa-solid fa-paper-plane"></i></button>
               </div>
             </fieldset>
           </form>
@@ -424,8 +424,10 @@
 
   
   <div class="bg-[#111111] text-center p-font text-base no-underline py-5 border-t-2">
-    <p>All Right Reserved By <a href="https://github.com/aanafiu">aanafiu</a></p>
+    <p>All Right Reserved By <a href="https://github.com/aanafiu" target=”_blank” >aanafiu</a></p>
 </div>
+
+<script src="./javascript.js"></script>
 
     
 </body>
