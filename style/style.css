@@ -17,16 +17,16 @@
   }
 
      .more{
-        display: none; 
+        visibility: hidden;
     }
     .main:hover{
         transform: rotate(90deg);
     }
     .main:hover + .more {
-        display: block;
+        visibility: visible;
     }
     .box:hover {
-        display: flex;
+        visibility: visible;
         flex-direction: column;
     }
 
